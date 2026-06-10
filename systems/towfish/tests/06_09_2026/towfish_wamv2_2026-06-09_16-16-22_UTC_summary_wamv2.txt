@@ -1,0 +1,60 @@
+TowFish WAMV-2 GPS Post-Processing Summary
+==========================================
+
+Input file: data/towfish_wamv2_2026-06-09_16-16-22_UTC.csv
+Rows: 77650
+Position source: TowFish layback-corrected position
+Finite magnetic rows: 0
+Finite map rows: 0
+Reference latitude: NaN
+Reference longitude: NaN
+
+Magnetic field nT: no finite data
+Magnetic anomaly nT: no finite data
+WAMV speed m/s:
+  count finite: 41570
+  mean: 2.7687191
+  std: 2.1053722
+  min: 0.073054093
+  max: 42.833436
+
+Heading deg:
+  count finite: 41118
+  mean: 182.05141
+  std: 98.891798
+  min: 0
+  max: 359.45275
+
+Depth m:
+  count finite: 77650
+  mean: 1.5837352
+  std: 2.0596333
+  min: -0.12
+  max: 11.44
+
+Horizontal layback m:
+  count finite: 77650
+  mean: 9.6010439
+  std: 1.0667375
+  min: 0
+  max: 10
+
+Layback delay s: no finite data
+Battery V:
+  count finite: 77650
+  mean: 24.820339
+  std: 0.07948434
+  min: 24.58
+  max: 25.02
+
+Leak voltage V:
+  count finite: 77650
+  mean: 3.2999987
+  std: 0.00011347602
+  min: 3.29
+  max: 3.3
+
+
+TowFish position method counts:
+  layback_disabled: 77648
+  no_gps: 2
