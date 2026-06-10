@@ -1,0 +1,9 @@
+the towfish electronics and WAMV-side logging mostly worked, the pressure/depth and health channels look useful, but the Twinleaf/QuSpin magnetic data path failed or was not parsed correctly.
+
+The strongest positive result is system health. Battery stayed very stable, with the summary showing an average of 24.82 V, minimum 24.58 V, and maximum 25.02 V. Leak voltage was essentially flat at 3.30 V, with a minimum of 3.29 V. Since the onboard code treats leak voltage at or above 3.0 V as NO_LEAK, this is a good “dry pressure vessel / healthy electronics” talking point.
+
+The depth sensor gave useful behavior data. The towfish depth averaged 1.58 m, with a maximum of 11.44 m. The plot shows the towfish diving and oscillating during earlier portions of the test, then spending much of the later portion near the surface or shallow depth. That is useful for discussing deployment geometry, tow speed effects, and whether the towfish is consistently staying in the intended water column.
+
+The WAMV GPS integration worked well enough to produce a track, but the “TowFish corrected” track should not be presented as a true layback-corrected towfish path yet. The summary says the position method was layback_disabled for 77,648 rows and no_gps for 2 rows, so the corrected position is effectively the WAMV GPS position copied into the towfish position fields.
+
+The magnetic result is the main issue. The summary reports 0 finite magnetic rows and 0 finite map rows, so no magnetic-field magnitude, anomaly, scatter map, or contour map can be interpreted from this run. The software is intended to include the latest Twinleaf/QuSpin line in the telemetry packet, so this points to a magnetometer-output, bridge, wiring, power, serial, or parser issue rather than a MATLAB plotting issue alone.
